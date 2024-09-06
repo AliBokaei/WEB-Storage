@@ -1,0 +1,8 @@
+{% load static %}
+{% autoescape off %}
+Hi,{{ user }},
+please click on the link below to confirm your registration:
+
+{{ domain }}{% url 'activate' uidb64=uid token=token %}
+{#127.0.0.1:8000{% url 'activate' uidb64=uid token=token %}#}
+{% endautoescape %}

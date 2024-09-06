@@ -1,0 +1,375 @@
+:root {
+  --primaryColor: #7288fa; /* main color*/
+  --white: #ffffff; /* main color*/
+  --gray: #a3b2c7; /* placeholder color */
+  --grar-bg: #F2F4F8;
+  --gray-bg-2:#F1F3FE;
+  --shadow: #4247611a;
+  --color-text-main: #333f4e;
+  --color-text-second: #707983;
+  --color-text-gray: #6F7A8A;
+
+
+}
+
+*{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Google Font Poppins */
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* End Google Font */
+
+/* Colors */
+
+.bg-purple {
+  background-color: var(--primaryColor);
+}
+
+.color-purple {
+  color : var(--primaryColor)!important;
+}
+
+
+.bg-gray{
+  background-color: var(--grar-bg);
+  border-radius: 30px;
+}
+
+
+.color-white {
+  color: var(--white);
+}
+
+.color-text-main {
+  color: var(--color-text-main);
+}
+
+.color-text-gray {
+  color: var(--color-text-gray);
+}
+
+.color-text-second{
+  color: var(--color-text-second);
+}
+
+.input-box > label {
+  color: var(--color-text-main);
+}
+
+.input-box > input {
+  color:#606364;
+}
+
+/* End Colors */
+
+/* Bootstrap Extends */
+
+.mt-6 {
+  margin-top: 5rem !important;
+}
+
+.mt-7 {
+  margin-top: 7rem !important;
+}
+
+.fs-7{
+  font-size: 0.75rem !important;
+}
+
+.fs-8{
+  font-size: 0.5rem !important;
+}
+
+/* End Bootstrap Extends */
+.w-95{
+  width: 95% !important;
+}
+
+
+.h-100vh {
+  height: 100vh!important;
+}
+
+.input-box {
+  box-shadow: 0px 10px 30px 0px var(--shadow);
+  border-radius: 12px;
+}
+
+.search-box {
+  box-shadow: 0px 30px 40px rgba(89, 104, 179, 0.06), 0px 0px 30px rgba(89, 104, 178, 0.06);
+}
+
+.fs-label {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.fs-input {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+
+
+::placeholder {
+  color: var(--gray);
+}
+
+input:focus {
+  outline: none;
+}
+
+input {
+  color: #606364;
+  border-radius:6px ;
+}
+
+.error-input-password-box{
+  border: solid 1px #FF7474;
+}
+
+
+
+
+.btn-main {
+  background-color: var(--primaryColor);
+  border-radius: 20px;
+  color: var(--white);
+  border: none;
+  animation-name: shadowRev;
+  animation-duration: 0.25s;
+
+}
+
+.btn-main:hover {
+  animation-name: shadow;
+  animation-duration: 1s;
+  /* animation-timing-function: ease-in-out; */
+  animation-fill-mode: forwards;
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 0px 0px 0px 0px var(--shadow);
+  }
+
+  100% {
+    box-shadow: 0px 10px 30px 0px var(--shadow);
+    border-radius: 40px;
+  }
+}
+
+@keyframes shadowRev {
+  0% {
+    box-shadow: 0px 10px 30px 0px var(--shadow);
+    border-radius: 40px;
+  }
+
+  100% {
+    box-shadow: 0px 0px 0px 0px var(--shadow);
+  }
+}
+
+.btn-second {
+  background-color: var(--primaryColor);
+  border-radius: 20px;
+  color: var(--white);
+  border: none;
+  box-shadow: 0px 8px 30px rgba(65, 89, 214, 0.3);
+}
+
+a {
+  text-decoration: none !important;
+  color: var(--primaryColor);
+}
+
+.circle-bg-icon-object {
+    width: 4rem !important;
+    height: 4rem !important;
+    background-color: var(--gray-bg-2);
+}
+
+.overflow-detail-object{
+  width: 50%!important;
+    white-space: nowrap!important;
+    text-overflow: ellipsis!important;
+}
+
+.btn-close-modal {
+  width: 2em;
+  height: 2em;
+  background-color: white;
+  border: 0;
+  opacity: 1;
+}
+
+.header-position-modal{
+  position: absolute;
+  left: 40%;
+  right: 40%;
+}
+
+.zoom-animation {
+
+}
+
+.zoom-animation:hover {
+  animation-name:zoom-out ;
+  scale: 1;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  /*animation-fill-mode: forwards;*/
+  animation-iteration-count: 1;
+
+}
+
+.animation-none{
+  animation: none!important;
+}
+
+@keyframes zoom-out{
+  from {
+     scale: 1;
+  }
+  to {
+  scale: 1.02;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+}
+
+ input[type="file"]::file-selector-button {
+            background-color: var(--primaryColor);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+
+ }
+
+
+ 
+.pagination {
+
+  --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(121, 91, 252, 0.25)!important;
+  --bs-pagination-active-bg: var(--primaryColor)!important;
+  --bs-pagination-color: var(--primaryColor)!important;
+  --bs-pagination-active-border-color: var(--primaryColor)!important;
+}
+
+.img-object-option{
+  width: 7px!important;
+  height: auto!important;
+}
